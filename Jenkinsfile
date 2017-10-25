@@ -44,7 +44,7 @@ node {
   if (stepstats['preapre_release']=='pass'){
     stage('install_rpm') {
       //install RPM
-      sh "rpm -Uvh target/rpm/calc/RPMS/noarch/calc*"
+      sh "sudo rpm -Uvh target/rpm/calc/RPMS/noarch/calc*"
     }
   }
   else
